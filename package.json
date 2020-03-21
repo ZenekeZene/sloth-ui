@@ -1,0 +1,22 @@
+{
+  "name": "frontend-orama-ui",
+  "version": "0.1.0",
+  "description": "UI de Frontend-ORAMA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenekeZene/frontend-ORAMA-ui.git"
+  },
+  "author": "Zeneke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZenekeZene/frontend-ORAMA-ui/issues"
+  },
+  "homepage": "https://github.com/ZenekeZene/frontend-ORAMA-ui#readme",
+  "dependencies": {
+    "sass-mq": "^5.0.1"
+  }
+}
