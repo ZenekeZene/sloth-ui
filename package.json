@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ZenekeZene/frontend-ORAMA-ui#readme",
   "dependencies": {
-    "sass-mq": "^5.0.1"
+    "sass-mq": "^5.0.1",
+    "moment": "^2.24.0",
+    "vue-spinner": "^1.0.3"
   }
 }
