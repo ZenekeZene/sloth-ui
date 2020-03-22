@@ -75,8 +75,6 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "../../assets/styles/base/breakpoints.scss";
-
 .header {
   position: relative;
   display: block;
@@ -117,10 +115,6 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
-
-    @include mq($until: phablet) {
-      font-size: 1.3rem;
-    }
   }
 
   .icon-forward {
