@@ -1,7 +1,7 @@
 <template>
   <article class="mini-avatar">
     <section class="image">
-      <img src="../../assets/images/boy.gif" :alt="`Avatar de ${name}`" />
+      <img src="../images/boy.gif" :alt="`Avatar de ${name}`" />
     </section>
     <p class="points">
       Has acertado {{ points }} pregunta {{ points > 1 ? "s" : "" }} en
