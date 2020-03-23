@@ -69,8 +69,4 @@ button {
     text-transform: uppercase;
     font-family: 'Museo Sans Rounded 900';
   }
-
-  @include mq($until: phablet) {
-    padding: 0.5rem;
-  }
 }

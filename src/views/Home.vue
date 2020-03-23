@@ -1,6 +1,32 @@
 <template>
   <div class="home">
     <h1>Frontend-ORAMA-UI</h1>
+    <p>Librería de estilos y componentes (próximamente) usados para el juego
+      Frontend-ORAMA.
+      <br/>Consiste en responder preguntas con temática front-end,
+      competir con tus amigos y compartir los resultados.
+    </p>
+    <section>
+      <h2>Cómo instalar:</h2>
+      <pre class="hljs">npm install --save frontend-orama-ui
+      </pre>
+    </section>
+    <section>
+      <h2>Títulos:</h2>
+      <h1>Heading</h1>
+      <h2>Heading</h2>
+      <h3>Heading</h3>
+      <h4>Heading</h4>
+      <h5>Heading</h5>
+      <h6>Heading</h6>
+    </section>
+    <section>
+      <h2>Fuente:</h2>
+      <p font-extra-bold>Museo Sans Rounded 900</p>
+      <p font-bold>Museo Sans Rounded 700</p>
+      <p font-regular>Museo Sans Rounded 500</p>
+      <p font-light>Museo Sans Rounded 100</p>
+    </section>
     <section>
       <h2>Colores:</h2>
       <div class="chip" column>
@@ -34,7 +60,6 @@
       <button>Boton</button>
       <button color-primary>Primario</button>
       <button color-secondary>Secundario</button>
-      <button neomorph>Neomorph</button>
       <button big>Grande</button>
       <button transparent>Transparente</button>
       <button transparent color-primary>Transparente</button>
@@ -84,7 +109,9 @@ export default {
 </script>
 <style lang="scss">
   .home {
-    padding: 5rem;
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 1rem;
 
     & > section {
       margin-bottom: 2rem;
