@@ -8,13 +8,17 @@ $ham-duration: 1000ms;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  stroke: var(--color-default);
 }
+
 .hamRotate.active {
   transform: rotate(45deg);
 }
+
 .hamRotate180.active {
   transform: rotate(180deg);
 }
+
 .line {
   fill: none;
   transition: stroke-dasharray $ham-duration, stroke-dashoffset $ham-duration;
@@ -22,27 +26,35 @@ $ham-duration: 1000ms;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
+
 .ham1 .top {
   stroke-dasharray: 40 139;
 }
+
 .ham1 .bottom {
   stroke-dasharray: 40 180;
 }
+
 .ham1.active .top {
   stroke-dashoffset: -98px;
 }
+
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
+
 .ham2 .top {
   stroke-dasharray: 40 121;
 }
+
 .ham2 .bottom {
   stroke-dasharray: 40 121;
 }
+
 .ham2.active .top {
   stroke-dashoffset: -102px;
 }
+
 .ham2.active .bottom {
   stroke-dashoffset: -102px;
 }

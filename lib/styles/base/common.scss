@@ -5,7 +5,7 @@ body {
 
 body {
   color: white;
-  background-color: teal;
+  background-color: var(--color-background);
   font-family: "Museo Sans Rounded 500", sans-serif;
 }
 
@@ -46,10 +46,20 @@ h1 {
 }
 
 a {
+  display: inline-block;
+  margin-left: 1rem;
   padding: 0.5rem 0;
   text-align: center;
   text-decoration: underline;
-  color: var(--color-secondary);
+  color: var(--color-default);
+
+  &[color-primary] {
+    color: var(--color-primary);
+  }
+
+  &[color-secondary] {
+    color: var(--color-secondary);
+  }
 }
 
 code {

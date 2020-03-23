@@ -1,15 +1,29 @@
-# FRONTEND-ORAMA-UI
+# frontend-orama-ui
 
-## User Interface for Frontend-ORAMA game (and his portal too).
-
-At the moment it's only serves a testing purpose.
-
-Install:
+## Project setup
 ```
-npm install frontend-ORAMA-ui
+npm install
 ```
 
-Use:
+### Compiles and hot-reloads for development
+```
+npm run serve
 ```
 
+### Compiles and minifies for production
 ```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,0 +1,23 @@
+.chip {
+	display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem;
+	color: var(--color-primary);
+	background-color: var(--color-default);
+    border-radius: 0.5rem;
+
+	&[color-primary] {
+		color: white;
+		background-color: var(--color-primary);
+	}
+
+	&[color-secondary] {
+		color: white;
+		background-color: var(--color-secondary);
+	}
+
+	&[column] {
+		display: inline-flex;
+		flex-direction: column;
+	}
+}

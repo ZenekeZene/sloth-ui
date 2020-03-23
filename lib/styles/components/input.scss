@@ -3,26 +3,49 @@ input[type="password"],
 input[type="email"],
 textarea {
   -webkit-appearance: none;
-  display: block;
-  width: 100%;
+  display: inline;
   padding: 0.5rem;
   font-size: 1rem;
-  color: white;
+  color: var(--color-primary);
   font-family: Helvetica;
+  margin-right: 1rem;
   margin-bottom: 0.5rem;
   background: transparent;
   border: none;
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--color-default);
   outline: none;
 
   &::placeholder {
-    color: rgba(white, 0.5);
+    color: var(--color-primary);
     font-size: 0.8rem;
     font-family: 'Museo Sans Rounded 100';
   }
 
   &.--correct {
     border-bottom-color: var(--color-correct);
+  }
+
+  &[color-primary] {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+
+    &::placeholder {
+      color: var(--color-primary);
+    }
+  }
+
+  &[color-secondary] {
+    color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
+
+    &::placeholder {
+      color: var(--color-secondary);
+    }
+  }
+
+  &[block] {
+    display: block;
+    width: 100%;
   }
 }
 

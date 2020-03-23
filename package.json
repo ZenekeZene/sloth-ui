@@ -1,24 +1,94 @@
 {
   "name": "frontend-orama-ui",
   "version": "0.1.35",
+  "private": true,
   "description": "UI de Frontend-ORAMA",
-  "main": "index.js",
+  "author": {
+    "name": "Zeneke"
+  },
   "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZenekeZene/frontend-ORAMA-ui.git"
+  "main": "index.js",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "moment": "^2.24.0",
+    "sass-mq": "^5.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vue-spinner": "^1.0.3"
   },
-  "author": "Zeneke",
-  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-plugin-unit-jest": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "_id": "frontend-orama-ui@0.1.35",
   "bugs": {
     "url": "https://github.com/ZenekeZene/frontend-ORAMA-ui/issues"
   },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
   "homepage": "https://github.com/ZenekeZene/frontend-ORAMA-ui#readme",
-  "dependencies": {
-    "sass-mq": "^5.0.1",
-    "moment": "^2.24.0",
-    "vue-spinner": "^1.0.3"
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenekeZene/frontend-ORAMA-ui.git"
   }
 }
