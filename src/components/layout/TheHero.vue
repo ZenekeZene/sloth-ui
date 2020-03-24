@@ -1,6 +1,5 @@
 <template>
   <header class="header">
-    <h1>SLOTH UI</h1>
     <div class="hero">
       <div class="hero__inner">
         <img
@@ -17,10 +16,8 @@ export default {
 <style lang="scss">
 $color: #fbd55a;
 .hero {
-  // position: absolute;
-  top: 4rem;
-  left: 0;
   width: 100%;
+  padding-top: 3.4rem;
   background: $color;
 
   &__inner {

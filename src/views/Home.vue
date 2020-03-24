@@ -1,45 +1,13 @@
 <template>
   <div class="home">
-    <TheHero />
-    <main class="content" sticky-container>
-      <TheSidebar v-sticky />
-      <div class="content__inner">
-        <Intro />
-        <GettingStarted />
-        <Content />
-        <Components />
-        <h2>Utilidades</h2>
-      </div>
-    </main>
+    <a href="/documentation">Documentación</a>
   </div>
 </template>
 
 <script>
-import TheHero from '@/components/layout/TheHero.vue';
-import TheSidebar from '@/components/layout/TheSidebar.vue';
-import Intro from '@/components/documentation/Intro.vue';
-import GettingStarted from '@/components/documentation/GettingStarted.vue';
-import Content from '@/components/documentation/content/Content.vue';
-import Components from '@/components/documentation/components/Components.vue';
 
 export default {
   name: 'Home',
-  components: {
-    TheSidebar,
-    TheHero,
-    Intro,
-    GettingStarted,
-    Content,
-    Components,
-  },
-  data() {
-    return {
-      sideOffset: {
-        bottom: 100,
-        left: 0,
-      },
-    };
-  },
 };
 </script>
 <style lang="scss">
