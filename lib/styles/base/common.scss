@@ -52,8 +52,6 @@ canvas {
 
 a {
   display: inline-block;
-  padding: 0 0.5rem;
-  text-align: center;
   text-decoration: underline;
   color: var(--color-dark);
 
@@ -63,6 +61,10 @@ a {
 
   &[color-secondary] {
     color: var(--color-secondary);
+  }
+
+  &.--activated {
+    @include font('bold');
   }
 }
 

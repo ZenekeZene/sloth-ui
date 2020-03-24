@@ -23,5 +23,6 @@ $font-family: unquote("#{$font-primary}, #{$font-fallback}");
 }
 
 @mixin font($key) {
-    font-family: 'Museo Sans Rounded #{$key}';
+    $variation: map_get($fonts, $key);
+    font-family: '#{$font-primary} #{$variation}';
 }

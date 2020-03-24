@@ -1,12 +1,12 @@
 <template>
-  <article>
+  <section>
     <h3>Enlaces:</h3>
-    <section>
+    <div>
       <a href="">Enlace</a>
       <a color-primary href="">Enlace</a>
       <a color-secondary href="">Enlace</a>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
 <script>
 export default {

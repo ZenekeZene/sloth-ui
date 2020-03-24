@@ -1,13 +1,13 @@
 <template>
-  <article>
+  <section>
     <h3>Chips</h3>
-    <section>
+    <div>
       <span class="chip">Item</span>
       <span class="chip" color-primary>Item</span>
       <span class="chip" color-secondary>Item</span>
       <span class="chip" color-tertiary>Item</span>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
 <script>
 export default {

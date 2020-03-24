@@ -2,11 +2,12 @@
   <nav class="navbar">
     <h1>SLOTH UI</h1>
     <ol>
-      <li><a href="/" m-b-0>Home</a></li>
-      <li><a href="/documentation" m-b-0>Documentación</a></li>
-      <li>Ejemplos</li>
-      <li>Iconos</li>
-      <li>Temas</li>
+      <li v-for="(item, index) in options" :key="`option-${index}`">
+        <a m-b-0
+        :href="item.path"
+        :class="{ '--activated' : currentRoute === item.name }"
+      >{{ item.value }}</a>
+      </li>
     </ol>
   </nav>
 </template>
@@ -17,7 +18,38 @@ export default {
 </script>
 <script>
 export default {
-  name: 'TheNavBar'
+  name: 'TheNavBar',
+  computed: {
+    currentRoute() {
+      return this.$router.currentRoute.name;
+    },
+  },
+  data() {
+    return {
+      options: [
+        {
+          name: 'Home',
+          path: '/',
+          value: 'Inicio'
+        },
+        {
+          name: 'Documentation',
+          path: '/documentation',
+          value: 'Documentación'
+        },
+        {
+          name: 'Examples',
+          path: '/examples',
+          value: 'Ejemplos'
+        },
+        {
+          name: 'Icons',
+          path: '/icons',
+          value: 'Iconos'
+        }
+      ]
+    }
+  }
 }
 </script>
 <style lang="scss">
@@ -25,6 +57,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     display: flex;
     align-items: center;

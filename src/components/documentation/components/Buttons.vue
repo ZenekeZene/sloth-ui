@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <section>
     <h3>Botones:</h3>
-    <section>
+    <div>
       <button>Boton</button>
       <button color-primary>Primario</button>
       <button color-secondary>Secundario</button>
@@ -12,8 +12,8 @@
       <button transparent color-primary>Transparente</button>
       <button transparent color-secondary>Transparente</button>
       <button block>Boton</button>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
 <script>
 export default {

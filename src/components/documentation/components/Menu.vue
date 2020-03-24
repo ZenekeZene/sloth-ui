@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <section>
     <h3>Menú:</h3>
-    <section>
+    <div>
       <svg
         class="ham hamRotate ham7 icon --right"
         viewBox="0 0 100 100"
@@ -18,8 +18,8 @@
           -9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
         />
       </svg>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
 <script>
 export default {

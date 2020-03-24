@@ -1,14 +1,11 @@
 <template>
   <div class="documentation">
-    <main class="content" sticky-container>
-      <TheSidebar v-sticky />
-      <div class="content__inner">
-        <Intro />
-        <GettingStarted />
-        <Content />
-        <Components />
-        <Utilities />
-      </div>
+    <main class="container" sticky-container>
+      <Intro />
+      <GettingStarted />
+      <Content />
+      <Components />
+      <Utilities />
     </main>
   </div>
 </template>
