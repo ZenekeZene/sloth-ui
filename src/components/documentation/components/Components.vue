@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>Componentes</h2>
+    <a id="components"><h2>Componentes</h2></a>
     <Buttons />
     <Chips />
     <Inputs />

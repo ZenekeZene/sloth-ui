@@ -5,7 +5,7 @@
 
 	& > article {
 		margin-bottom: 1rem;
-		padding: 0 2rem;
+		padding: 0 1rem;
 
 		section {
 			padding: 1rem 3rem;
@@ -22,10 +22,15 @@
 		font-size: 1.5em;
 	}
 
-	article > h2 {
+	article > a[id] {
+		width: 100%;
 		margin-bottom: 2rem;
 		padding: 1rem;
 		background-color: #ececec;
+
+		h2 {
+			margin-bottom: 0;
+		}
 	}
 
 	section > h3 {
@@ -51,6 +56,6 @@
 	}
 }
 
-.navbar + * {
+.navbar + * > .container {
 	margin-top: 3.4rem;
 }

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>Contenido</h2>
+    <a id="content"><h2>Contenido</h2></a>
     <Colors />
     <Headings />
     <Typography />

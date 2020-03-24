@@ -1,12 +1,30 @@
 <template>
 <aside class="sidebar">
   <nav class="menu">
-    <ol>
-      <li>Empezar</li>
-      <li>Contenido</li>
-      <li>Componentes</li>
-      <li>Utilidades</li>
-    </ol>
+    <scrollactive :offset="80">
+      <ol>
+        <li>
+          <a href="#getting-started"
+            v-smooth-scroll
+            class="scrollactive-item"
+          >Empezar</a></li>
+        <li>
+          <a href="#content"
+            v-smooth-scroll
+            class="scrollactive-item"
+          >Contenido</a></li>
+        <li>
+          <a href="#components"
+            v-smooth-scroll
+            class="scrollactive-item"
+          >Componentes</a></li>
+        <li>
+          <a href="#utilities"
+            v-smooth-scroll
+            class="scrollactive-item"
+          >Utilidades</a></li>
+      </ol>
+    </scrollactive>
   </nav>
 </aside>
 </template>
@@ -16,19 +34,24 @@ export default {
 };
 </script>
 <style lang="scss">
+  @import '../../../lib/fonts/museo/museo.scss';
   .sidebar {
-    position: absolute;
-    top: 24rem;
-    left: 0;
-    padding: 0 2rem;
-    width: 15rem !important;
     display: inline-block;
-    border: 1px solid red;
+    width: 10rem !important;
+    padding: 3.8rem 0 1rem 0;
   }
 
   .menu {
+    position: sticky;
+    top: 5rem;
+
     ol {
       list-style-type: none;
+      padding-left: 0;
+    }
+
+    .is-active {
+      @include font('bold');
     }
   }
 </style>
