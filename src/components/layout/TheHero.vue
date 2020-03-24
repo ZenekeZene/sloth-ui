@@ -2,6 +2,7 @@
   <header class="header">
     <div class="hero">
       <div class="hero__inner">
+        <slot></slot>
         <img
           src="https://logopond.com/logos/27b2b54c837411e9d3056bdf369df840.png">
       </div>
@@ -14,14 +15,15 @@ export default {
 };
 </script>
 <style lang="scss">
-$color: #fbd55a;
 .hero {
+  position: relative;
   width: 100%;
-  padding-top: 3.4rem;
-  background: $color;
+  background: var(--color-tertiary);
 
   &__inner {
-    max-width: 63rem;
+    display: flex;
+    align-items: center;
+    max-width: var(--container-max-width);;
     margin: 0 auto;
   }
 
@@ -32,8 +34,8 @@ $color: #fbd55a;
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 16.7rem;
-    background-color: $color;
+    height: 100%;
+    background-color: var(--color-tertiary);
   }
 }
 </style>

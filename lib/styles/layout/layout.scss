@@ -1,5 +1,5 @@
 .container {
-	max-width: 55rem;
+	max-width: var(--container-max-width);
 	margin: 0 auto;
 	padding: 1rem;
 
@@ -49,4 +49,8 @@
 	.content__inner {
 		padding-left: 15rem;
 	}
+}
+
+.navbar + * {
+	margin-top: 3.4rem;
 }

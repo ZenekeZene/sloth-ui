@@ -1,14 +1,16 @@
 <template>
   <nav class="navbar">
-    <h1>SLOTH UI</h1>
-    <ol>
-      <li v-for="(item, index) in options" :key="`option-${index}`">
-        <a m-b-0
-        :href="item.path"
-        :class="{ '--activated' : currentRoute === item.name }"
-      >{{ item.value }}</a>
-      </li>
-    </ol>
+    <div class="container">
+      <h1>SLOTH UI</h1>
+      <ol>
+        <li v-for="(item, index) in options" :key="`option-${index}`">
+          <a m-b-0
+          :href="item.path"
+          :class="{ '--activated' : currentRoute === item.name }"
+        >{{ item.value }}</a>
+        </li>
+      </ol>
+    </div>
   </nav>
 </template>
 <script>
@@ -46,6 +48,11 @@ export default {
           name: 'Icons',
           path: '/icons',
           value: 'Iconos'
+        },
+        {
+          name: 'Customize',
+          path: '/customize',
+          value: 'Customizar'
         }
       ]
     }
@@ -59,10 +66,15 @@ export default {
     left: 0;
     z-index: 1;
     width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
     background-color: white;
+    border-bottom: 5px solid var(--color-tertiary);
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 1rem;
+    }
 
     h1 {
       margin-bottom: 0;

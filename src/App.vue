@@ -1,18 +1,15 @@
 <template>
   <div id="app">
     <TheNavBar />
-    <TheHero />
     <router-view/>
   </div>
 </template>
 <script>
 import TheNavBar from '@/components/layout/TheNavBar.vue';
-import TheHero from '@/components/layout/TheHero.vue';
 
 export default {
   name: 'App',
   components: {
-    TheHero,
     TheNavBar,
   },
 };

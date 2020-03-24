@@ -1,6 +1,14 @@
-button,
-[type='button'],
-[type='submit'] {
+@mixin buttons-selector {
+  button,
+  .button,
+  [type='button'],
+  [type='submit'],
+  a[like-button] {
+    @content;
+  }
+}
+
+@include buttons-selector {
   position: relative;
   margin-right: 1rem;
   padding: 1rem 2rem;
@@ -9,7 +17,7 @@ button,
   letter-spacing: inherit;
   color: var(--color-dark);
   background-color: #ececec;
-  border-radius: 1.3rem;
+  border-radius: var(--button-border-radius);
   border: none;
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
   transition: all var(--duration) ease-in;
@@ -80,5 +88,45 @@ button,
   &[small] {
     padding: 0.8rem;
     font-size: 0.8rem;
+  }
+
+  &[outlined] {
+    border: 2px solid var(--color-default);
+    background-color: transparent;
+    box-shadow: none;
+
+    &[color-primary] {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    &[color-secondary] {
+      color: var(--color-secondary);
+      border-color: var(--color-secondary);
+    }
+
+    &[color-tertiary] {
+      color: var(--color-tertiary);
+      border-color: var(--color-tertiary);
+    }
+  }
+}
+
+.buttons-group {
+  display: flex;
+  
+  .button {
+    margin-right: 0;
+    border-radius: 0;
+
+    &:first-child {
+      border-top-left-radius: var(--button-border-radius);
+      border-bottom-left-radius: var(--button-border-radius);
+    }
+
+    &:last-child {
+      border-top-right-radius: var(--button-border-radius);
+      border-bottom-right-radius: var(--button-border-radius);
+    }
   }
 }
