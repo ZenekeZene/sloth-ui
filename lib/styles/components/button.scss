@@ -60,8 +60,13 @@ button {
   }
 
   &[color-secondary] {
-    color: white;
+    color: var(--color-dark);
     background: var(--color-secondary);
+  }
+
+  &[color-tertiary] {
+    color: var(--color-dark);
+    background: var(--color-tertiary);
   }
 
   &[big] {

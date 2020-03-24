@@ -1,15 +1,20 @@
 <template>
   <div class="home">
-    <h1>Frontend-ORAMA-UI</h1>
-    <p>Librería de estilos y componentes (próximamente) usados para el juego
+    <h1>SLOTH UI</h1>
+    <div class="hero">
+      <div class="hero__inner">
+        <img
+          src="https://logopond.com/logos/27b2b54c837411e9d3056bdf369df840.png">
+      </div>
+    </div>
+    <p style="margin-top: 20rem;">Librería de estilos y componentes (próximamente) usados para el juego
       Frontend-ORAMA.
       <br/>Consiste en responder preguntas con temática front-end,
       competir con tus amigos y compartir los resultados.
     </p>
     <section>
       <h2>Cómo instalar:</h2>
-      <pre class="hljs">npm install --save frontend-orama-ui
-      </pre>
+      <pre class="hljs">npm install --save frontend-orama-ui</pre>
     </section>
     <section>
       <h2>Títulos:</h2>
@@ -60,6 +65,7 @@
       <button>Boton</button>
       <button color-primary>Primario</button>
       <button color-secondary>Secundario</button>
+      <button color-tertiary>Terciario</button>
       <button big>Grande</button>
       <button transparent>Transparente</button>
       <button transparent color-primary>Transparente</button>
@@ -115,6 +121,25 @@ export default {
 
     & > section {
       margin-bottom: 2rem;
+    }
+
+    .hljs {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1.5em;
+    }
+
+    .hero {
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background: #fbd55a;
+
+      &__inner {
+        max-width: 63rem;
+        margin: 0 auto;
+      }
     }
   }
 </style>
