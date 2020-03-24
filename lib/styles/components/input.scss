@@ -6,7 +6,7 @@ textarea {
   display: inline;
   padding: 0.5rem;
   font-size: 1rem;
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-family: Helvetica;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
@@ -16,7 +16,7 @@ textarea {
   outline: none;
 
   &::placeholder {
-    color: var(--color-primary);
+    color: var(--color-dark);
     font-size: 0.8rem;
     font-family: 'Museo Sans Rounded 100';
   }

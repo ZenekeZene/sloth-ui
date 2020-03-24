@@ -2,10 +2,10 @@
 	display: inline-block;
     margin-right: 1rem;
 	margin-bottom: 1rem;
-    padding: 1rem;
-	color: var(--color-primary);
+    padding: 0.2rem 1rem;
+	color: var(--color-dark);
 	background-color: var(--color-default);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 
 	&[color-primary] {
 		color: white;
@@ -13,8 +13,13 @@
 	}
 
 	&[color-secondary] {
-		color: white;
+		color: var(--color-dark);
 		background-color: var(--color-secondary);
+	}
+
+	&[color-tertiary] {
+		color: var(--color-dark);
+		background-color: var(--color-tertiary);
 	}
 
 	&[column] {

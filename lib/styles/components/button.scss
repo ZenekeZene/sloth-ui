@@ -1,11 +1,13 @@
-button {
+button,
+[type='button'],
+[type='submit'] {
   position: relative;
   margin-right: 1rem;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-family: 'Museo Sans Rounded 500', Helvetica, sans-serif;
   letter-spacing: inherit;
-  color: var(--color-primary);
+  color: var(--color-dark);
   background-color: #ececec;
   border-radius: 1.3rem;
   border: none;
@@ -35,7 +37,7 @@ button {
   }
 
   &[transparent] {
-    color: var(--color-default);
+    color: var(--color-dark);
     background: transparent;
     box-shadow: none;
 
@@ -73,5 +75,10 @@ button {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Museo Sans Rounded 900';
+  }
+
+  &[small] {
+    padding: 0.8rem;
+    font-size: 0.8rem;
   }
 }
