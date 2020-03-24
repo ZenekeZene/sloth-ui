@@ -1,29 +1,15 @@
-# frontend-orama-ui
+# SLOTH UI
 
-## Project setup
-```
-npm install
-```
+<img
+	src="https://logopond.com/logos/27b2b54c837411e9d3056bdf369df840.png">
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Librería de estilos y componentes (próximamente) usados para el juego Frontend-ORAMA.
 
-### Compiles and minifies for production
+Consiste en responder preguntas con temática front-end, competir con tus amigos y compartir los resultados.
+
+## Cómo instalar:</h2>
 ```
-npm run build
+npm install --save frontend-orama-ui
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    
