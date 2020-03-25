@@ -1,0 +1,20 @@
+@include buttons-selector {
+  &[block] {
+    width: 100%;
+    display: block;
+  }
+
+  &[simple] {
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+}

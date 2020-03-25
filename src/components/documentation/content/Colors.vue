@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <section>
     <h3>Colores:</h3>
-    <section>
+    <div>
       <div class="chip" column>
         <span>Default:</span>
         <span>{{ colorDefault }}</span>
@@ -14,8 +14,8 @@
         <span>Secundario:</span>
         <span>{{ colorSecondary }}</span>
       </div>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
 <script>
 export default {

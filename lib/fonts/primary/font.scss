@@ -1,0 +1,27 @@
+$font-primary: 'Museo Sans Rounded';
+$fonts: (
+  'light': '100',
+  'regular': '500',
+  'bold': '700',
+  'extra-bold': '900'
+);
+$font-fallback: 'Helvetica', sans-serif;
+
+@each $key, $value in $fonts {
+  @font-face {
+    font-family: '#{$font-primary} #{$value}';
+    font-style: normal;
+    font-weight: normal;
+    src: local('#{$font-primary} #{$value}'), url('https://www.cufonfonts.com/cdn/webfont/museo-sans-rounded/MuseoSansRounded#{$value}.woff?token=EBWV46vY7W1EOxOM2CyojxiGbEhHOcTU') format('woff');
+  }
+
+  .font-#{$key},
+  [font-#{$key}] {
+    font-family: '#{$font-primary} #{$value}';
+  }
+}
+
+@mixin font($key) {
+  $variation: map_get($fonts, $key);
+  font-family: '#{$font-primary} #{$variation}', #{$font-fallback};
+}

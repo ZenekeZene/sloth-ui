@@ -36,5 +36,6 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 3rem;
   }
 </style>

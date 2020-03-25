@@ -6,7 +6,6 @@
     </section>
     <h3>Cómo usarlo:</h3>
     <p>Hay 2 opciones</p>
-    <section></section>
   </article>
 </template>
 <script>

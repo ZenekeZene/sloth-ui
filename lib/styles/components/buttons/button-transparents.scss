@@ -1,0 +1,26 @@
+@include buttons-selector {
+	&[transparent] {
+		color: var(--color-dark);
+		background: transparent;
+		box-shadow: none;
+
+		[class^='icon'] {
+		padding-right: 0.5rem;
+		}
+
+		&[color-primary] {
+		color: var(--color-primary);
+		background: transparent;
+		}
+
+		&[color-secondary] {
+		color: var(--color-secondary);
+		background: transparent;
+		}
+
+		&[color-tertiary] {
+		color: var(--color-tertiary);
+		background: transparent;
+		}
+	}
+}

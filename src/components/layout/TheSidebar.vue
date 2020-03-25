@@ -34,7 +34,7 @@ export default {
 };
 </script>
 <style lang="scss">
-  @import '../../../lib/fonts/museo/museo.scss';
+  @import '../../../lib/fonts/primary/font.scss';
   .sidebar {
     display: inline-block;
     width: 10rem !important;

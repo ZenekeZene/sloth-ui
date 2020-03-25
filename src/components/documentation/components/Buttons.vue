@@ -2,7 +2,7 @@
   <section>
     <h3>Botones:</h3>
     <div>
-      <button>Boton</button>
+      <button>Botón</button>
       <button color-primary>Primario</button>
       <button color-secondary>Secundario</button>
       <button color-tertiary>Terciario</button>
@@ -15,11 +15,17 @@
       <button transparent>Transparente</button>
       <button transparent color-primary>Transparente</button>
       <button transparent color-secondary>Transparente</button>
+      <button transparent color-tertiary>Transparente</button>
       <br/>
+      <button mini>Mini</button>
       <button small>Pequeño</button>
+      <button>Normal</button>
       <button big>Grande</button>
+      <button huge>Enorme</button>
       <br/>
-      <button block>Boton</button>
+      <button disabled>Deshabilitado</button>
+      <br/>
+      <button block>Botón</button>
     </div>
   </section>
 </template>

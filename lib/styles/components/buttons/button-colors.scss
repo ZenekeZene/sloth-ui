@@ -1,0 +1,16 @@
+@include buttons-selector {
+	&[color-primary] {
+		color: white;
+		background: var(--color-primary);
+	}
+
+	&[color-secondary] {
+		color: var(--color-dark);
+		background: var(--color-secondary);
+	}
+
+	&[color-tertiary] {
+		color: var(--color-dark);
+		background: var(--color-tertiary);
+	}
+}

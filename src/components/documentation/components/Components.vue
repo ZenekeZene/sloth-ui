@@ -4,7 +4,6 @@
     <Buttons />
     <Chips />
     <Inputs />
-    <Links />
     <Menu />
   </article>
 </template>
@@ -13,7 +12,6 @@
 import Buttons from './Buttons.vue';
 import Chips from './Chips.vue';
 import Inputs from './Inputs.vue';
-import Links from './Links.vue';
 import Menu from './Menu.vue';
 
 export default {
@@ -22,7 +20,6 @@ export default {
     Buttons,
     Chips,
     Inputs,
-    Links,
     Menu,
   },
 };

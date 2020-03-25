@@ -1,0 +1,25 @@
+@include buttons-selector {
+  &[mini] {
+    padding: 0.7rem;
+    font-size: 0.6rem;
+    @include font('light');
+  }
+
+  &[small] {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    @include font('light');
+  }
+
+  &[big] {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    @include font('bold')
+  }
+
+  &[huge] {
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include font('extra-bold')
+  }
+}

@@ -1,0 +1,22 @@
+@include buttons-selector {
+  &[outlined] {
+    border: 2px solid var(--color-default);
+    background-color: transparent;
+    box-shadow: none;
+
+    &[color-primary] {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    &[color-secondary] {
+      color: var(--color-dark);
+      border-color: var(--color-secondary);
+    }
+
+    &[color-tertiary] {
+      color: var(--color-dark);
+      border-color: var(--color-tertiary);
+    }
+  }
+}

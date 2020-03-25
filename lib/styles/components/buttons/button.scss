@@ -1,0 +1,43 @@
+@mixin buttons-selector {
+  button,
+  .button,
+  [type='button'],
+  [type='submit'],
+  a[like-button] {
+    @content;
+  }
+}
+
+@include buttons-selector {
+  position: relative;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  @include font('regular');
+  letter-spacing: inherit;
+  color: var(--color-dark);
+  background-color: #ececec;
+  border-radius: var(--button-border-radius);
+  border: none;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  transition: all var(--duration) ease-in;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+}
+
+@import 'button-variants';
+@import 'button-colors';
+@import 'button-outlined';
+@import 'button-transparents';
+@import 'button-sizes';
+@import 'button-group';

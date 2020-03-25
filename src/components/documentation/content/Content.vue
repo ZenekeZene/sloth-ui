@@ -4,6 +4,7 @@
     <Colors />
     <Headings />
     <Typography />
+    <Links />
   </article>
 </template>
 
@@ -11,6 +12,7 @@
 import Colors from './Colors.vue';
 import Headings from './Headings.vue';
 import Typography from './Typography.vue';
+import Links from './Links.vue';
 
 export default {
   name: 'Content',
@@ -18,6 +20,7 @@ export default {
     Colors,
     Headings,
     Typography,
+    Links,
   },
 };
 </script>

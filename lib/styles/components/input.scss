@@ -18,7 +18,7 @@ textarea {
   &::placeholder {
     color: var(--color-dark);
     font-size: 0.8rem;
-    font-family: 'Museo Sans Rounded 100';
+    @include font('light');
   }
 
   &.--correct {
