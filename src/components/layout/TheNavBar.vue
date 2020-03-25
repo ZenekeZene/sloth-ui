@@ -4,7 +4,7 @@
       <h1>SLOTH UI</h1>
       <ol>
         <li v-for="(item, index) in options" :key="`option-${index}`">
-          <a m-b-0
+          <a class="mb-0"
           :href="item.path"
           :class="{ '--activated' : currentRoute === item.name }"
         >{{ item.value }}</a>
