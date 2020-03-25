@@ -33,7 +33,7 @@
 		}
 	}
 
-	section > h3 {
+	/*section > h3 {
 		margin-left: -1.5rem;
 
 		&:before {
@@ -45,7 +45,7 @@
 			background-color: #ececec;
 			border-radius: 0.2rem;
 		}
-	}
+	}*/
 
 	section > div {
 		padding: 0 1rem;
@@ -58,4 +58,32 @@
 
 .navbar + * > .container {
 	margin-top: 3.4rem;
+}
+
+.scrollactive-nav {
+display: inline;
+}
+
+h2.subtitle {
+	margin-top: 5rem;
+}
+
+.subtitle {
+	$offset-x: 2rem;
+	margin-left: -$offset-x;
+	padding-left: $offset-x;
+
+	& a {
+		visibility: hidden;
+		padding: 0 0.5rem;
+		color: var(--color-tertiary);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:hover {
+		& a {
+		visibility: visible;
+		}
+	}
 }

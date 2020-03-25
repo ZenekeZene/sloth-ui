@@ -1,6 +1,6 @@
 <template>
   <article>
-    <a id="utilities"><h2>Utilidades</h2></a>
+    <subtitle-anchor id="utilities" :level=2>Utilidades</subtitle-anchor>
     <Spacing />
     <Position />
   </article>

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <a id="content"><h2>Contenido</h2></a>
+    <subtitle-anchor id="content" :level=2>Contenido</subtitle-anchor>
     <Colors />
     <Headings />
     <Typography />

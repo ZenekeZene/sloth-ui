@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Colores:</h3>
+    <subtitle-anchor id="colors" :level=3>Colores</subtitle-anchor>
     <div>
       <div class="chip" column>
         <span>Default:</span>

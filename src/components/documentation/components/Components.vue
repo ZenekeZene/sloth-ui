@@ -1,6 +1,6 @@
 <template>
   <article>
-    <Subtitle id="components">Componentes</Subtitle>
+    <subtitle-anchor id="components" :level=2>Componentes</subtitle-anchor>
     <Buttons />
     <Chips />
     <Inputs />

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Espaciado</h3>
+    <!--<Subtitle id="spacing">Espaciado</Subtitle>-->
     <div>
 
     </div>
