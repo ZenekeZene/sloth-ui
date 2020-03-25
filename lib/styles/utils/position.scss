@@ -1,0 +1,45 @@
+// Position:
+$properties: (
+  'static',
+  'relative',
+  'absolute',
+  'fixed',
+  'sticky'
+);
+
+@each $property in $properties {
+  .#{$property} {
+    position: #{$property};
+  }
+}
+
+// Top / Right / Bottom / Left:
+$multipliers: 0, auto;
+
+$coordinates: (
+  'inset': ('top', 'right', 'bottom', 'left'),
+  'inset-y': ('top', 'bottom'),
+  'inset-x': ('right', 'left'),
+  'top': ('top'),
+  'bottom': ('bottom'),
+  'right': ('right'),
+  'left': ('left')
+);
+
+@each $multiplier in $multipliers {
+  @each $k-coord, $list-coords in $coordinates {
+    .#{$k-coord}-#{$multiplier} {
+      @each $coordinate in $list-coords {
+        #{$coordinate}: $multiplier;
+      }
+    }
+  }
+}
+
+// Z-Index:
+$multipliers: (0, 10, 20, 30, 40, 50, auto);
+@each $multiplier in $multipliers {
+  .z-#{$multiplier} {
+    z-index: $multiplier;
+  }
+}
