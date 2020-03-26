@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Fuente:</h3>
+    <subtitle-anchor id="fonts" :level=3>Fuente</subtitle-anchor>
     <div>
       <p font-extra-bold>Museo Sans Rounded 900</p>
       <p font-bold>Museo Sans Rounded 700</p>

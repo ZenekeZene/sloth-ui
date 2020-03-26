@@ -1,12 +1,12 @@
+import { subtitle } from '../../assets/styles/subtitle.module.scss';
+
 export default {
   render() {
     const tag = `h${this.level}`;
     return (
-      <tag class="subtitle relative">
+      <tag class={`${subtitle} relative`} id={this.id}>
         <scrollactive offset={80}>
-          <a id={this.id}
-            v-smooth-scroll
-            class="scrollactive-item absolute left-0 mb-0"
+          <a class="scrollactive-item absolute left-0 mb-0 no-underline"
             href={`#${this.id}`}
           >#</a>
         </scrollactive>

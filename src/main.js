@@ -1,15 +1,19 @@
 import Vue from 'vue';
 import Sticky from 'vue-sticky-directive';
-import vueSmoothScroll from 'vue2-smooth-scroll';
+import VueScrollTo from 'vue-scrollto';
 import VueScrollactive from 'vue-scrollactive';
 import Subtitle from '@/components/layout/Subtitle';
 import App from './App.vue';
 import router from './router';
 
-
+// Library styles:
 import '../lib/styles/main.scss';
 
-Vue.use(vueSmoothScroll);
+// Documentation styles:
+import './assets/styles/main.scss';
+
+Vue.use(VueScrollTo);
+// Vue.use(vueSmoothScroll);
 Vue.use(VueScrollactive);
 Vue.component('subtitle-anchor', Subtitle);
 

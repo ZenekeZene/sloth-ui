@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Menú:</h3>
+    <subtitle-anchor id="menu" :level=3>Menu</subtitle-anchor>
     <div>
       <svg
         class="ham hamRotate ham7 icon --right"

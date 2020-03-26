@@ -52,8 +52,12 @@ canvas {
 
 a {
   display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-dark);
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &[color-primary] {
     color: var(--color-primary);

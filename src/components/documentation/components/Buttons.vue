@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Botones:</h3>
+    <subtitle-anchor id="buttons" :level=3>Botones:</subtitle-anchor>
     <div>
       <button>Botón</button>
       <button color-primary>Primario</button>

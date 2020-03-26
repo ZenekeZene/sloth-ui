@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Enlaces:</h3>
+    <subtitle-anchor id="links" :level=3>Enlaces</subtitle-anchor>
     <div>
       <a href="">Enlace</a>&nbsp;
       <a color-primary href="">Enlace</a>&nbsp;

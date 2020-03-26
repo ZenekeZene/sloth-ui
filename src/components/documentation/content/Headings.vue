@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Títulos:</h3>
+    <subtitle-anchor id="headings" :level=3>Headings</subtitle-anchor>
     <div>
       <h1>Heading</h1>
       <h2>Heading</h2>

@@ -1,0 +1,24 @@
+h2.subtitle {
+	margin-top: 5rem;
+}
+
+.subtitle {
+	$offset-x: 2rem;
+	margin-top: 1rem;
+	margin-left: -$offset-x;
+	padding-left: $offset-x;
+
+	& a {
+		visibility: hidden;
+		padding: 0 0.5rem;
+		color: var(--color-tertiary);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:hover {
+		& a {
+		visibility: visible;
+		}
+	}
+}

@@ -28,6 +28,21 @@ export default {
     Components,
     Utilities,
   },
+  created() {
+    // this.anchorHashCheck();
+  },
+  methods: {
+    anchorHashCheck() {
+      const { hash } = this.$route;
+      if (hash) {
+        const el = document.getElementById(hash.substr(1));
+        if (el) {
+          const top = el.getBoundingClientRect().top + window.pageYOffset;
+          this.$scrollTo(top);
+        }
+      }
+    },
+  },
 };
 </script>
 <style lang="scss">

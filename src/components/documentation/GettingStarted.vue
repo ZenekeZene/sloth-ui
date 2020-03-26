@@ -1,10 +1,10 @@
 <template>
   <article>
-    <h3>Cómo instalar:</h3>
+    <subtitle-anchor id="how-install" :level=3>Cómo instalar</subtitle-anchor>
     <section>
       <pre class="hljs">npm install --save frontend-orama-ui</pre>
     </section>
-    <h3>Cómo usarlo:</h3>
+    <subtitle-anchor id="how-use" :level=3>Cómo usarlo</subtitle-anchor>
     <p>Hay 2 opciones</p>
   </article>
 </template>

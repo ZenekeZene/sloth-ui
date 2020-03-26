@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Inputs:</h3>
+    <subtitle-anchor id="inputs" :level=3>Inputs</subtitle-anchor>
     <div>
       <input type="text" placeholder="Inserta texto">
       <input type="text" placeholder="Inserta texto" color-primary>

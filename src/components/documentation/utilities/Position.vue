@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Posicionamiento</h3>
+    <subtitle-anchor id="position" :level=3>Posicionamiento</subtitle-anchor>
     <div>
       <h4>Posicionamiento</h4>
       <h4>Top / Bottom / Right / Left</h4>
