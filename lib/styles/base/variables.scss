@@ -1,42 +1,15 @@
-@function str-replace($string, $search, $replace: '') {
-  $index: str-index($string, $search);
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
-  @return $string;
-}
-
-@mixin defineColorHSL($color, $hue, $saturation, $lightness){
+@mixin define-shades-3($color, $hue, $saturation, $lightness, $mult: 10) {
+  #{$color}--light: unquote("hsl(#{$hue}, #{$saturation}, #{$lightness + $mult})");
   #{$color}: unquote("hsl(#{$hue}, #{$saturation}, #{$lightness})");
-  #{$color}-h: #{$hue};
-  #{$color}-s: #{$saturation};
-  #{$color}-l: #{$lightness};
-}
-
-@function lightness($color, $lightnessMultiplier){
-  $color: str-replace($color, 'var(');
-  $color: str-replace($color, ')');
-  $color-h: var(#{$color+'-h'});
-  $color-s: var(#{$color+'-s'});
-  $color-l: var(#{$color+'-l'});
-  @return hsl($color-h, $color-s, calc(#{$color-l} * #{$lightnessMultiplier}));
-}
-
-@function saturation($color, $saturationMultiplier){
-  $color: str-replace($color, 'var(');
-  $color: str-replace($color, ')');
-  $color-h: var(#{$color+'-h'});
-  $color-s: var(#{$color+'-s'});
-  $color-l: var(#{$color+'-l'});
-  @return hsl($color-h, calc(#{$color-s} * #{$saturationMultiplier}), $color-l);
+  #{$color}--dark: unquote("hsl(#{$hue}, #{$saturation}, #{$lightness - $mult})");
 }
 
 :root {
   --vh: 1;
-  @include defineColorHSL(--color-primary, 238, 29%, 50%);
-  @include defineColorHSL(--color-secondary, 9, 100%, 79%);
-  @include defineColorHSL(--color-tertiary, 46, 95%, 67%);
-  @include defineColorHSL(--color-default, 0, 0%, 93%);
+  @include define-shades-3(--color-primary, 238, 29%, 50%, 20);
+  @include define-shades-3(--color-secondary, 9, 100%, 79%, 20);
+  @include define-shades-3(--color-tertiary, 46, 95%, 67%, 20);
+  @include define-shades-3(--color-default, 0, 0%, 90%, 5);
   --color-incorrect: #e3665c;
   --color-correct: #65a681;
   --color-dark: #303031;
@@ -44,6 +17,11 @@
   --duration: 150ms;
   --button-border-radius: 1rem;
   --container-max-width: 66rem;
+}
+
+.color-dark {
+  --lightness: 79%;
+  background-color: hsl(0, 0%, var(--lightness, 0%));
 }
 
 $gutter: 1rem;

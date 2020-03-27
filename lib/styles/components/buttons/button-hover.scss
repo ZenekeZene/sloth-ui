@@ -1,21 +1,23 @@
 @include buttons-selector {
+
 	&:hover[hover] {
 		transform: none;
-		background-color: lightness(var(--color-default), 0.85);
+		--color-hover: var(--color-default--dark);
+		background-color: var(--color-hover);
 
 		&[color-primary] {
 			color: white;
-			background-color: lightness(var(--color-primary), 0.85);
+			--color-hover: var(--color-primary--dark);
 		}
 
 		&[color-secondary] {
 			color: var(--color-dark);
-			background-color: lightness(var(--color-secondary), 0.85);
+			--color-hover: var(--color-secondary--dark);
 		}
 
 		&[color-tertiary] {
 			color: var(--color-dark);
-			background-color: lightness(var(--color-tertiary), 0.85);
+			--color-hover: var(--color-tertiary--dark);
 		}
 	}
 
