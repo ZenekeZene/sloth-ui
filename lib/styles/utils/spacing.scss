@@ -22,13 +22,13 @@ $coordinates: (
 
 	@each $k-prop, $property in $properties {
 		.#{$k-prop}-#{$multiplier} {
-			#{$property}: #{$size};
+			#{$property}: #{$size} !important;
 		}
 
 		@each $k-coord, $list-coords in $coordinates {
 			.#{$k-prop}#{$k-coord}-#{$multiplier} {
 				@each $coordinate in $list-coords {
-					#{$property}-#{$coordinate}: #{$size};
+					#{$property}-#{$coordinate}: #{$size} !important;
 				}
 			}
 		}

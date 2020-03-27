@@ -9,7 +9,7 @@ $properties: (
 
 @each $property in $properties {
   .#{$property} {
-    position: #{$property};
+    position: #{$property} !important;
   }
 }
 
@@ -30,7 +30,7 @@ $coordinates: (
   @each $k-coord, $list-coords in $coordinates {
     .#{$k-coord}-#{$multiplier} {
       @each $coordinate in $list-coords {
-        #{$coordinate}: $multiplier;
+        #{$coordinate}: $multiplier !important;
       }
     }
   }
@@ -40,6 +40,6 @@ $coordinates: (
 $multipliers: (0, 10, 20, 30, 40, 50, auto);
 @each $multiplier in $multipliers {
   .z-#{$multiplier} {
-    z-index: $multiplier;
+    z-index: $multiplier !important;
   }
 }
