@@ -5,11 +5,10 @@
 }
 
 :root {
-  --vh: 1;
   @include define-shades-3(--color-primary, 238, 29%, 50%, 20);
   @include define-shades-3(--color-secondary, 9, 100%, 79%, 20);
   @include define-shades-3(--color-tertiary, 46, 95%, 67%, 20);
-  @include define-shades-3(--color-default, 0, 0%, 90%, 5);
+  @include define-shades-3(--color-default, 0, 0%, 90%, 20);
   --color-incorrect: #e3665c;
   --color-correct: #65a681;
   --color-dark: #303031;
@@ -17,6 +16,7 @@
   --duration: 150ms;
   --button-border-radius: 1rem;
   --container-max-width: 66rem;
+  --vh: 1;
 }
 
 .color-dark {

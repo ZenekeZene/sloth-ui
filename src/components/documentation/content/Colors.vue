@@ -14,6 +14,10 @@
         <span>Secundario:</span>
         <span>{{ colorSecondary }}</span>
       </div>
+      <div class="chip" column color-tertiary>
+        <span>Terciario:</span>
+        <span>{{ colorTertiary }}</span>
+      </div>
     </div>
   </section>
 </template>
@@ -32,6 +36,9 @@ export default {
     },
     colorSecondary() {
       return this.style.getPropertyValue('--color-secondary');
+    },
+    colorTertiary() {
+      return this.style.getPropertyValue('--color-tertiary');
     },
   },
 };

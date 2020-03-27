@@ -1,0 +1,22 @@
+input[type="checkbox"] {
+	$size: 1rem;
+	// -webkit-appearance: none;
+	// appearance: none;
+	width: $size;
+	height: $size;
+	margin-right: 0.5rem;
+	border: 1px solid var(--color-default--dark);
+	border-radius: 0.2rem;
+
+	&:checked {
+		background-color: var(--color-primary);
+	}
+
+	& + label {
+		padding-right: 0.5rem;
+	}
+
+	&[disabled] + label {
+		color: var(--color-default--dark);
+	}
+}

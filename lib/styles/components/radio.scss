@@ -1,18 +1,5 @@
 input[type="radio"] {
-  -webkit-appearance: none;
-  display: block;
-  width: 1.5rem;
-  min-width: 1.5rem;
-  height: 1.5rem;
   margin-right: 0.5rem;
-  border-radius: 55px;
-  border: 2px solid var(--color-secondary);
-  transition: 250ms ease-in background-color;
-  outline: none;
-
-  &:checked {
-    background-color: var(--color-secondary);
-  }
 
   &.--correct {
 
@@ -25,5 +12,57 @@ input[type="radio"] {
   &.--incorrect {
     background-color: var(--color-incorrect);
     border-color: var(--color-incorrect);
+  }
+
+  & + label {
+    padding-right: 0.5rem;
+  }
+
+  &[disabled] + label {
+    color: var(--color-default--dark);
+  }
+}
+
+.radio-button {
+  display: inline-flex;
+  vertical-align: top;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  --color: var(--color-secondary);
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0;
+    border-radius: 55px;
+    border: 2px solid var(--color);
+    transition: 250ms ease-in background-color;
+    outline: none;
+
+    &:checked:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: var(--color);
+      border-radius: 50%;
+    }
+
+    & + label {
+      color: var(--color);
+    }
+  }
+
+  &[color-primary] {
+    --color: var(--color-primary);
+  }
+
+  &[color-tertiary] {
+    --color: var(--color-tertiary);
   }
 }
