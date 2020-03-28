@@ -65,4 +65,11 @@ input[type="radio"] {
   &[color-tertiary] {
     --color: var(--color-tertiary);
   }
+
+  &[fill] {
+    input[type="radio"]:checked:before {
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+    }
+  }
 }

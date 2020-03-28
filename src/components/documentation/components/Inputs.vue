@@ -9,6 +9,10 @@
       <input type="text" placeholder="Inserta texto" boxed>
       <input type="text" placeholder="Inserta texto" boxed color-primary>
       <input type="text" placeholder="Inserta texto" boxed color-secondary>
+      <div class="stacked">
+        <input type="text" placeholder=" ">
+        <label>Teléfono</label>
+      </div>
       <div class="stacked" color-primary>
         <input type="text" placeholder=" ">
         <label>Teléfono</label>

@@ -29,6 +29,21 @@
         <label for="louie2">Huey</label>
       </div>
     </div>
+
+    <div>
+      <div class="radio-button" fill>
+        <input type="radio" id="huey2" name="drone" value="huey">
+        <label for="huey2">Huey</label>
+      </div>
+      <div class="radio-button" color-primary fill>
+        <input type="radio" id="dewey2" name="drone" value="huey">
+        <label for="dewey2">Huey</label>
+      </div>
+      <div class="radio-button" color-tertiary fill>
+        <input type="radio" id="louie2" name="drone" value="huey">
+        <label for="louie2">Huey</label>
+      </div>
+    </div>
   </section>
 </template>
 <script>
