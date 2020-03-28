@@ -1,7 +1,13 @@
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea {
+@mixin inputs-selector {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    @content;
+  }
+}
+
+@include inputs-selector {
   --color: --color-dark;
   --border-color: var(--color-default);
   -webkit-appearance: none;
@@ -10,7 +16,6 @@ textarea {
   padding: 0.5rem;
   color: var(--color);
   font-size: 1rem;
-  font-family: Helvetica;
   background: transparent;
   border: none;
   border-color: var(--border-color);
@@ -53,6 +58,55 @@ textarea {
   &[block] {
     display: block;
     width: 100%;
+  }
+}
+
+.stacked {
+  --color: var(--color-primary);
+  --border-color: var(--color-default);
+  position: relative;
+  padding-top: 0.5rem;
+
+  @include inputs-selector {
+    border-color: var(--border-color);
+
+    & + label {
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      font-size: 0.8rem;
+      @include font('light');
+      color: var(--color);
+      pointer-events: none;
+      transition: all 150ms ease-in;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      top: 0rem;
+    }
+  }
+
+  &[color-primary] {
+    @include inputs-selector {
+      --color: var(--color-primary);
+      --border-color: var(--color-primary);
+
+      & + label {
+        --color: var(--color-primary);
+      }
+    }
+  }
+
+  &[color-secondary] {
+    @include inputs-selector {
+      --color: var(--color-secondary);
+      --border-color: var(--color-secondary);
+
+      & + label {
+        --color: var(--color-secondary);
+      }
+    }
   }
 }
 

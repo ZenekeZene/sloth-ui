@@ -1,6 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container">
+      <img src="favicon.png" style="margin-right: 1rem; width: 2rem;">
       <h1>SLOTH UI</h1>
       <ol>
         <li v-for="(item, index) in options" :key="`option-${index}`">
