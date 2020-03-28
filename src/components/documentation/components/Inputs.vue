@@ -6,6 +6,9 @@
       <input type="text" placeholder="Inserta texto" color-primary>
       <input type="text" placeholder="Inserta texto" color-secondary>
       <input type="text" placeholder="Inserta texto" block>
+      <input type="text" placeholder="Inserta texto" boxed>
+      <input type="text" placeholder="Inserta texto" boxed color-primary>
+      <input type="text" placeholder="Inserta texto" boxed color-secondary>
     </div>
   </section>
 </template>

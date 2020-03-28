@@ -2,17 +2,20 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
+  --color: --color-dark;
+  --border-color: var(--color-default);
   -webkit-appearance: none;
   display: inline;
-  padding: 0.5rem;
-  font-size: 1rem;
-  color: var(--color-dark);
-  font-family: Helvetica;
   margin-right: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: var(--color);
+  font-size: 1rem;
+  font-family: Helvetica;
   background: transparent;
   border: none;
-  border-bottom: 3px solid var(--color-default);
+  border-color: var(--border-color);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
   outline: none;
 
   &::placeholder {
@@ -22,25 +25,29 @@ textarea {
   }
 
   &.--correct {
-    border-bottom-color: var(--color-correct);
+    --border-color:: var(--color-correct);
   }
 
   &[color-primary] {
-    color: var(--color-primary);
-    border-bottom-color: var(--color-primary);
+    --color: var(--color-primary);
+    --border-color:: var(--color-primary);
 
     &::placeholder {
-      color: var(--color-primary);
+      color: inherit;
     }
   }
 
   &[color-secondary] {
-    color: var(--color-secondary);
-    border-bottom-color: var(--color-secondary);
+    --color: var(--color-secondary);
+    --border-color:: var(--color-secondary);
 
     &::placeholder {
-      color: var(--color-secondary);
+      color: inherit;
     }
+  }
+
+  &[boxed] {
+    border: 1px solid var(--border-color);
   }
 
   &[block] {
