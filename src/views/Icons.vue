@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
-    <main class="container p-0" sticky-container>
+  <div class="container" sticky-container>
+    <main class="container p-0">
       <h1>Iconos</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem repellat minima quam
         maxime sequi reiciendis voluptatem maiores delectus odit vel, quis eos eaque fuga.
         Ipsum dolore unde exercitationem temporibus sapiente.</p>
-      <input
-        type="search"
-        v-model="inputSearch"
-        class="max-width" mt-8 block
-        placeholder="Empieza a teclear para filtrar..."
-        v-sticky :sticky-offset="80" sticky-side="top"
+      <div
+        class="search-wrapper max-width"
+        v-sticky
+        sticky-offset="{top: 59, bottom: 30}"
+        sticky-side="both"
       >
+        <input
+          type="search"
+          v-model="inputSearch"
+          class="max-width" block mb-0
+          placeholder="Empieza a teclear para filtrar..."
+        >
+      </div>
       <div mt-6>
         <ol class="icons max-width" v-if="iconsFiltered.length > 0">
           <li v-for="(icon, index) in iconsFiltered" :key="`icon-${index}`"
@@ -46,6 +52,11 @@ export default {
 </script>
 <style lang="scss">
   @import '../../lib/fonts/primary/font.scss';
+
+  .search-wrapper {
+    padding: 1rem;
+    background-color: white;
+  }
 
   input[type="search"].max-width,
   ol.max-width {
