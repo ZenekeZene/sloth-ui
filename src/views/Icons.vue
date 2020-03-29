@@ -23,8 +23,8 @@
           <li v-for="(icon, index) in iconsFiltered" :key="`icon-${index}`"
             class="icons__item p-3"
           >
-            <span :class="icon"></span>
-            <span>{{ icon }}</span>
+            <span :class="icon.replace('$', '')"></span>
+            <span>{{ icon.replace('$', '') }}</span>
           </li>
         </ol>
         <p v-else>Lo sentimos, no encontramos nada para esta búsqueda.</p>
@@ -33,20 +33,26 @@
   </div>
 </template>
 <script>
-import icons from '../../lib/fonts/paint/variables.scss';
+/* eslint-disable import/no-webpack-loader-syntax */
+const fontIcons = require('sass-extract-loader!../../lib/fonts/paint/variables.scss');
 
 export default {
   name: 'Icons',
   computed: {
     iconsFiltered() {
-      return Object.keys(this.icons).filter((item) => item.includes(this.inputSearch));
+      return this.icons.filter((icon) => icon.includes(this.inputSearch));
     },
   },
   data() {
     return {
-      icons,
+      icons: [],
       inputSearch: '',
     };
+  },
+  created() {
+    this.icons = Object.keys(fontIcons.global).filter(
+      (icon) => !/icomoon-font-path|icomoon-font-family/.test(icon),
+    );
   },
 };
 </script>
@@ -78,8 +84,12 @@ export default {
       align-items: center;
       cursor: pointer;
 
+      &:hover {
+        color: var(--color-secondary);
+      }
+
       span:first-child {
-        padding: 2rem;
+        padding: 1rem 2rem;
         font-size: 2rem;
       }
 
