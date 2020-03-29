@@ -3,16 +3,7 @@
   <nav class="menu">
     <scrollactive :offset="80">
       <ol>
-        <li class="sidebar__item">
-          <a href="#getting-started"
-            class="scrollactive-item p-2 mb-0 w-100"
-          >Empezar</a>
-          <ol class="sidebar__list">
-            <li>Cómo instalar</li>
-            <li>Cómo usarlo</li>
-          </ol>
-        </li>
-
+        <SidebarItem :items="items.gettingStarted" />
         <SidebarItem :items="items.content" />
         <SidebarItem :items="items.components" />
         <SidebarItem :items="items.utilities" />
@@ -23,6 +14,7 @@
 </template>
 <script>
 import SidebarItem from './SidebarItem.vue';
+import GettingStarted from '../documentation/getting-started/GettingStarted.vue';
 import Components from '../documentation/components/Components.vue';
 import Content from '../documentation/content/Content.vue';
 import Utilities from '../documentation/utilities/Utilities.vue';
@@ -39,16 +31,24 @@ export default {
   },
   created() {
     this.items = {
+      gettingStarted: {
+        hash: 'getting-started',
+        name: 'Cómo empezar',
+        components: GettingStarted.components,
+      },
       content: {
-        name: 'content',
+        hash: 'content',
+        name: 'Contenido',
         components: Content.components,
       },
       components: {
-        name: 'components',
+        hash: 'components',
+        name: 'Componentes',
         components: Components.components,
       },
       utilities: {
-        name: 'utilities',
+        hash: 'utilities',
+        name: 'Utilidades',
         components: Utilities.components,
       },
     };
@@ -64,6 +64,10 @@ export default {
 
     & &__list {
       padding-left: 1em;
+    }
+
+    &__item {
+      margin-bottom: 2rem;
     }
   }
 

@@ -13,7 +13,7 @@
 <script>
 import TheSidebar from '@/components/layout/TheSidebar.vue';
 import Intro from '@/components/documentation/Intro.vue';
-import GettingStarted from '@/components/documentation/GettingStarted.vue';
+import GettingStarted from '@/components/documentation/getting-started/GettingStarted.vue';
 import Content from '@/components/documentation/content/Content.vue';
 import Components from '@/components/documentation/components/Components.vue';
 import Utilities from '@/components/documentation/utilities/Utilities.vue';

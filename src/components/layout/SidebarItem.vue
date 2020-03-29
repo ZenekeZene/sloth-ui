@@ -1,7 +1,7 @@
 <template>
   <li class="sidebar__item">
-    <a :href="`#${items.name}`"
-      class="scrollactive-item p-2 mb-0 w-100"
+    <a :href="`#${items.hash}`"
+      class="scrollactive-item mb-0 w-100"
     >{{ capitalizeName }}</a>
     <ol class="sidebar__list">
       <li
