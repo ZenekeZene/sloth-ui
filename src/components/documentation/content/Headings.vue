@@ -14,5 +14,6 @@
 <script>
 export default {
   name: 'Headings',
+  alias: 'Títulos',
 };
 </script>

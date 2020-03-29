@@ -5,14 +5,14 @@
     >{{ capitalizeName }}</a>
     <ol class="sidebar__list">
       <li
-        v-for="(item, index) in items.components"
+        v-for="(item, index) in items.component.components"
         :key="`item-${index}`"
       >
         <scrollactive active-class="active">
           <a
             class="scrollactive-item mb-0"
             :href="`#${item.name.toLowerCase()}`"
-          >{{ item.name }}</a>
+          >{{ item.alias || item.name }}</a>
         </scrollactive>
       </li>
     </ol>

@@ -37,5 +37,6 @@
 <script>
 export default {
   name: 'Buttons',
+  alias: 'Botones',
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <subtitle-anchor id="getting-started" :level=2>Getting Started</subtitle-anchor>
+    <subtitle-anchor id="getting-started" :level=2>Cómo empezar</subtitle-anchor>
     <Install />
     <HowUse />
   </article>

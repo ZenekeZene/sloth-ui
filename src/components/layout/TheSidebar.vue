@@ -26,30 +26,27 @@ export default {
   },
   data() {
     return {
-      items: null,
-    };
-  },
-  created() {
-    this.items = {
-      gettingStarted: {
-        hash: 'getting-started',
-        name: 'Cómo empezar',
-        components: GettingStarted.components,
-      },
-      content: {
-        hash: 'content',
-        name: 'Contenido',
-        components: Content.components,
-      },
-      components: {
-        hash: 'components',
-        name: 'Componentes',
-        components: Components.components,
-      },
-      utilities: {
-        hash: 'utilities',
-        name: 'Utilidades',
-        components: Utilities.components,
+      items: {
+        gettingStarted: {
+          hash: 'getting-started',
+          name: 'Cómo empezar',
+          component: GettingStarted,
+        },
+        content: {
+          hash: 'content',
+          name: 'Contenido',
+          component: Content,
+        },
+        components: {
+          hash: 'components',
+          name: 'Componentes',
+          component: Components,
+        },
+        utilities: {
+          hash: 'utilities',
+          name: 'Utilidades',
+          component: Utilities,
+        },
       },
     };
   },
@@ -60,7 +57,7 @@ export default {
   .sidebar {
     display: inline-block;
     width: 10rem !important;
-    padding: 3.8rem 0 1rem 0;
+    padding: 3.8rem 0 1rem 2.5rem;
 
     & &__list {
       padding-left: 1em;

@@ -1,7 +1,7 @@
 <template>
-  <div class="documentation container">
+  <div class="container" d-flex>
     <TheSidebar class="sidebar" />
-    <main class="container" style="padding: 0" sticky-container>
+    <main class="container p-0" sticky-container>
       <Intro />
       <GettingStarted />
       <Content />
@@ -45,8 +45,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-  .documentation {
-    display: flex;
-  }
-</style>

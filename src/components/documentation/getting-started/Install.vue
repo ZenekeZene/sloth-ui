@@ -9,5 +9,6 @@
 <script>
 export default {
   name: 'Install',
+  alias: 'Instalar',
 };
 </script>

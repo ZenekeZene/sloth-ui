@@ -16,6 +16,7 @@ import Links from './Links.vue';
 
 export default {
   name: 'Content',
+  alias: 'Contenido',
   components: {
     Colors,
     Headings,

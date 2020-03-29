@@ -24,6 +24,7 @@
 <script>
 export default {
   name: 'Colors',
+  alias: 'Colores',
   computed: {
     style() {
       return getComputedStyle(document.body);

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <img src="favicon.png" style="margin-right: 1rem; width: 2rem;">
+      <img src="favicon.png" class="navbar__icon">
       <h1>SLOTH UI</h1>
       <ol>
         <li v-for="(item, index) in options" :key="`option-${index}`">
@@ -75,6 +75,16 @@ export default {
       align-items: center;
       justify-content: flex-start;
       padding: 0 1rem;
+    }
+
+    &__icon {
+      width: 2rem;
+      margin-right: 1rem;
+      transition: 250ms ease-in;
+
+      &:hover {
+        transform: rotateZ(360deg);
+      }
     }
 
     h1 {

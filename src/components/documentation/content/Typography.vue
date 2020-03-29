@@ -12,5 +12,6 @@
 <script>
 export default {
   name: 'Typography',
+  alias: 'Tipografía',
 };
 </script>

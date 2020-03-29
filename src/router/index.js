@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Documentation from '../views/Documentation.vue';
+import Icons from '../views/Icons.vue';
 import Error from '../views/Error.vue';
 
 Vue.use(VueRouter);
@@ -24,6 +25,11 @@ const routes = [
     path: '/documentation',
     name: 'Documentation',
     component: Documentation,
+  },
+  {
+    path: '/icons',
+    name: 'Icons',
+    component: Icons,
   },
   {
     path: '*',

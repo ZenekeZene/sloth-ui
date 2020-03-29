@@ -9,5 +9,6 @@
 <script>
 export default {
   name: 'Spacing',
+  alias: 'Espaciado',
 };
 </script>
