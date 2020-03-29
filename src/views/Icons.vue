@@ -41,6 +41,10 @@ export default {
       flex-direction: column;
       align-items: center;
 
+      span:first-child {
+        font-size: 2rem;
+      }
+
       span:last-child {
         padding-top: 0.5rem;
       }

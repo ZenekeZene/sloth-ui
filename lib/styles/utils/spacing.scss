@@ -21,11 +21,13 @@ $coordinates: (
 	$size: $unit * $multiplier;
 
 	@each $k-prop, $property in $properties {
+		[#{$k-prop}-#{$multiplier}],
 		.#{$k-prop}-#{$multiplier} {
 			#{$property}: #{$size} !important;
 		}
 
 		@each $k-coord, $list-coords in $coordinates {
+			[#{$k-prop}#{$k-coord}-#{$multiplier}],
 			.#{$k-prop}#{$k-coord}-#{$multiplier} {
 				@each $coordinate in $list-coords {
 					#{$property}-#{$coordinate}: #{$size} !important;

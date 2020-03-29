@@ -11,6 +11,10 @@
         >{{ item.value }}</a>
         </li>
       </ol>
+      <ol>
+        <li><a href="https://github.com/ZenekeZene/sloth-ui" mb-0 no-underline><span class="icon-github"></span></a></li>
+        <li><a href="https://twitter.com/ZenekeZene" mb-0 no-underline><span class="icon-twitter"></span></a></li>
+      </ol>
     </div>
   </nav>
 </template>
