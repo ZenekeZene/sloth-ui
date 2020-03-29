@@ -4,8 +4,9 @@
     <Buttons />
     <Chips />
     <Inputs />
-    <RadioButtons />
     <Checkboxes />
+    <Radios />
+    <Selects />
     <Menu />
   </article>
 </template>
@@ -15,7 +16,8 @@ import Buttons from './Buttons.vue';
 import Chips from './Chips.vue';
 import Inputs from './Inputs.vue';
 import Checkboxes from './Checkboxes.vue';
-import RadioButtons from './RadioButtons.vue';
+import Radios from './Radios.vue';
+import Selects from './Selects.vue';
 import Menu from './Menu.vue';
 
 export default {
@@ -25,7 +27,8 @@ export default {
     Chips,
     Inputs,
     Checkboxes,
-    RadioButtons,
+    Radios,
+    Selects,
     Menu,
   },
 };

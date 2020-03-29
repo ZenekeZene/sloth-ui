@@ -12,45 +12,47 @@
             <li>Cómo usarlo</li>
           </ol>
         </li>
-        <li class="sidebar__item">
-          <a href="#content"
-            class="scrollactive-item p-2 mb-0 w-100"
-          >Contenido</a>
-          <ol class="sidebar__list">
-            <li>Colores</li>
-            <li>Headings</li>
-            <li>Fuente</li>
-            <li>Enlace</li>
-          </ol>
-        </li>
-        <li class="sidebar__item">
-          <a href="#components"
-            class="scrollactive-item p-2 mb-0 w-100"
-          >Componentes</a>
-          <ol class="sidebar__list">
-            <li>Botones</li>
-            <li>Chips</li>
-            <li>Inputs</li>
-            <li>Menu</li>
-          </ol>
-        </li>
-        <li class="sidebar__item">
-          <a href="#utilities"
-            class="scrollactive-item p-2 mb-0 w-100"
-          >Utilidades</a>
-          <ol class="sidebar__list">
-            <li>Espaciado</li>
-            <li>Posicionamiento</li>
-          </ol>
-        </li>
+
+        <SidebarItem :items="items.content" />
+        <SidebarItem :items="items.components" />
+        <SidebarItem :items="items.utilities" />
       </ol>
     </scrollactive>
   </nav>
 </aside>
 </template>
 <script>
+import SidebarItem from './SidebarItem.vue';
+import Components from '../documentation/components/Components.vue';
+import Content from '../documentation/content/Content.vue';
+import Utilities from '../documentation/utilities/Utilities.vue';
+
 export default {
   name: 'TheSidebar',
+  components: {
+    SidebarItem,
+  },
+  data() {
+    return {
+      items: null,
+    };
+  },
+  created() {
+    this.items = {
+      content: {
+        name: 'content',
+        components: Content.components,
+      },
+      components: {
+        name: 'components',
+        components: Components.components,
+      },
+      utilities: {
+        name: 'utilities',
+        components: Utilities.components,
+      },
+    };
+  },
 };
 </script>
 <style lang="scss">
@@ -59,11 +61,6 @@ export default {
     display: inline-block;
     width: 10rem !important;
     padding: 3.8rem 0 1rem 0;
-
-    .scrollactive-item {
-      height: 2rem;
-      line-height: 1rem;
-    }
 
     & &__list {
       padding-left: 1em;

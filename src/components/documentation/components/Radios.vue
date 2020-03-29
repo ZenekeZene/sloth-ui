@@ -1,6 +1,6 @@
 <template>
   <section>
-    <subtitle-anchor id="radio" :level=3>Radio buttons</subtitle-anchor>
+    <subtitle-anchor id="radios" :level=3>Radio buttons</subtitle-anchor>
     <div>
       <div block>
         <input type="radio" id="huey" name="drone" value="huey" checked>
@@ -48,6 +48,6 @@
 </template>
 <script>
 export default {
-  name: 'Checkboxes',
+  name: 'Radios',
 };
 </script>
