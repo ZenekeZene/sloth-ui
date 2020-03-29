@@ -21,6 +21,10 @@
         <input type="text" placeholder=" ">
         <label>Teléfono</label>
       </div>
+      <div class="action">
+        <input type="search">
+        <button>Buscar</button>
+      </div>
     </div>
   </section>
 </template>

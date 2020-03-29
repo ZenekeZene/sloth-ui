@@ -2,6 +2,7 @@
   input[type="text"],
   input[type="password"],
   input[type="email"],
+  input[type="search"],
   textarea {
     @content;
   }
@@ -106,6 +107,37 @@
       & + label {
         --color: var(--color-secondary);
       }
+    }
+  }
+}
+
+.action {
+
+  @include inputs-selector() {
+    @extend [boxed];
+    margin-right: 0;
+  }
+
+  @include buttons-selector() {
+    @extend [hover];
+    --border-color: var(--color-default);
+    padding: 0.47rem 1.5rem;
+    vertical-align: top;
+    box-shadow: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  &[block] {
+    display: flex !important;
+
+    @include inputs-selector() {
+      flex-grow: 1;
     }
   }
 }
