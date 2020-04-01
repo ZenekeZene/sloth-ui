@@ -15,6 +15,11 @@
           <a href="/documentation" class="button">Descargar</a>
           <a href="/documentation" class="button">Documentación</a>
         </nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequatur dolor optio quidem dolores eum cum et, quis
+          error facilis quae ipsam amet in cumque fugiat sint?
+          Hic delectus mollitia obcaecati.
+        </p>
       </div>
     </TheHero>
   </div>

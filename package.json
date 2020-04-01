@@ -1,8 +1,8 @@
 {
   "name": "sloth-ui",
   "version": "0.1.35",
-  "private": true,
-  "description": "The best UI library of the worl",
+  "private": false,
+  "description": "The best UI library of the world",
   "author": {
     "name": "Zeneke"
   },
