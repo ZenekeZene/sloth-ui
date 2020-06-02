@@ -37,19 +37,6 @@ h1 {
   font-size: 2em;
 }
 
-canvas {
-  width: 100%;
-  cursor: pointer;
-  transform: scale(0.9);
-  transition: all var(--duration) ease-in-out;
-
-  &:hover {
-    @include mq($from: phablet) {
-      transform: scale(0.95);
-    }
-  }
-}
-
 a {
   display: inline-block;
   text-decoration: none;
