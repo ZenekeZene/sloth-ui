@@ -4,6 +4,7 @@
     <Buttons />
     <Chips />
     <Inputs />
+    <Ranges />
     <Checkboxes />
     <Radios />
     <Selects />
@@ -15,6 +16,7 @@
 import Buttons from './Buttons.vue';
 import Chips from './Chips.vue';
 import Inputs from './Inputs.vue';
+import Ranges from './Ranges.vue';
 import Checkboxes from './Checkboxes.vue';
 import Radios from './Radios.vue';
 import Selects from './Selects.vue';
@@ -26,6 +28,7 @@ export default {
     Buttons,
     Chips,
     Inputs,
+    Ranges,
     Checkboxes,
     Radios,
     Selects,

@@ -2,7 +2,7 @@
   <section>
     <subtitle-anchor id="install" :level=3>Cómo instalar</subtitle-anchor>
     <section>
-      <pre class="hljs">npm install --save frontend-orama-ui</pre>
+      <pre class="hljs">npm install --save @zeneke/sloth-ui</pre>
     </section>
   </section>
 </template>
