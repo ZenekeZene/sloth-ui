@@ -11,7 +11,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "main": "index.js",
   "dependencies": {
@@ -27,9 +29,14 @@
     "vue-scrollto": "^2.17.1",
     "vue-spinner": "^1.0.3",
     "vue-sticky-directive": "0.0.10",
-    "vue2-smooth-scroll": "^1.2.0"
+    "vue2-smooth-scroll": "^1.2.0",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-essentials": "^6.0.22",
+    "@storybook/addon-links": "^6.0.22"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/html": "^6.0.22",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
@@ -37,12 +44,19 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/test-utils": "1.0.0-beta.31",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
+    "react-is": "^16.13.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
